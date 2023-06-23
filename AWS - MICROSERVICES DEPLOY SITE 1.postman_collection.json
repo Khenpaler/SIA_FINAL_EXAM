@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "e9d70e56-9ba7-4701-861a-2aa21e823aac",
+		"name": "AWS - MICROSERVICES DEPLOY SITE 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://18.177.146.114:8000/show/users",
+					"protocol": "http",
+					"host": [
+						"18",
+						"177",
+						"146",
+						"114"
+					],
+					"port": "8000",
+					"path": [
+						"show",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET USERS BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://18.177.146.114:8000/find/users/3",
+					"protocol": "http",
+					"host": [
+						"18",
+						"177",
+						"146",
+						"114"
+					],
+					"port": "8000",
+					"path": [
+						"find",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://18.177.146.114:8000/add/users?username=Khen&password=1234&gender=Male&jobid=2",
+					"protocol": "http",
+					"host": [
+						"18",
+						"177",
+						"146",
+						"114"
+					],
+					"port": "8000",
+					"path": [
+						"add",
+						"users"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Khen"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "gender",
+							"value": "Male"
+						},
+						{
+							"key": "jobid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://18.177.146.114:8000/delete/users/3",
+					"protocol": "http",
+					"host": [
+						"18",
+						"177",
+						"146",
+						"114"
+					],
+					"port": "8000",
+					"path": [
+						"delete",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://18.177.146.114:8000/update/users/5?username=Khen&password=1234&gender=Male&jobid=5",
+					"protocol": "http",
+					"host": [
+						"18",
+						"177",
+						"146",
+						"114"
+					],
+					"port": "8000",
+					"path": [
+						"update",
+						"users",
+						"5"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Khen"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "gender",
+							"value": "Male"
+						},
+						{
+							"key": "jobid",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "c0448679-d27a-4816-a42b-1f41442b5804",
+		"name": "sia_gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNmM4OGJmN2MzNTY3N2JkZjVhNTc4ZjZkMzgxNWQzNWYxOGU3OWQ5ZDM4NTM2MDkzMzc1YjhhYWM0NGU2MDAxNTY2YmQ0NDAzNDQzYWZmMDciLCJpYXQiOjE2ODY5ODgxODIuNjc5NjQ1LCJuYmYiOjE2ODY5ODgxODIuNjc5NjQ2LCJleHAiOjE3MTg2MTA1ODIuNjU5MjMxLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.JwQw8mmLYVcOy4SizIebAKcLAswDQJTd35jOm5dh--8DViq1y4nN2rlh8GhgbcamFlV3HMPeBO_VDyehzWCpFYxTEE6SxRDdI9IClgG3Ut_5uNOzpTrsXX4O7lzt2s5RyvRBD-0CbD_ixmvm6AksCtQYLpR5Go5_ml9H1sgh3aHzPvO7XDvAitTOcBPu_3nLBeMp2aKc-KFpcq6erGMNuJJ_iD6COF5zBR95yzUUn0BxwGsCf46PS7S7RDwrLlhifzNl3JnQuhXNv-DGvZIh6HEH3rWzVTwshFsG5nvvYAKXfnQeptWjdxGmOpF2a3fLvZyWlBj4ufl-bmGUjY60te7kLc7b5dvBYdChZZiE9uMkbJJA_tXxBpZIQ7lb9-zxaK40-kxnRhuk800nXSf1SxDqJZLjqRCQn2GJ4MLklF1Z8t030gzH2LwEol94MdPgrYKVFQfSbkzdv5vcGlkN-tzLBV-qfPUC9dAfD1CXDeHi7k-iRL1mRJdeAwOcoIx-ZsE7KvG3eTBVHBpifXyNIXj1R41u4uvvHGwShwFbsUK6wFyPhhUeHZ_GQ481KIvCehI5yEMo3Zrdh_-GcRC2dBHclVAxSPV6jZQIjcKIUTs5irB2VpkkEK80SdfYhAe2Ud0_jaTnFy4grsj9NSNIrhBdOjX83U9MHaT9SZufCHs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Paler",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "2134",
+							"type": "default"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "default"
+						},
+						{
+							"key": "jobid",
+							"value": "11",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/add/users2",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"add",
+						"users2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNmM4OGJmN2MzNTY3N2JkZjVhNTc4ZjZkMzgxNWQzNWYxOGU3OWQ5ZDM4NTM2MDkzMzc1YjhhYWM0NGU2MDAxNTY2YmQ0NDAzNDQzYWZmMDciLCJpYXQiOjE2ODY5ODgxODIuNjc5NjQ1LCJuYmYiOjE2ODY5ODgxODIuNjc5NjQ2LCJleHAiOjE3MTg2MTA1ODIuNjU5MjMxLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.JwQw8mmLYVcOy4SizIebAKcLAswDQJTd35jOm5dh--8DViq1y4nN2rlh8GhgbcamFlV3HMPeBO_VDyehzWCpFYxTEE6SxRDdI9IClgG3Ut_5uNOzpTrsXX4O7lzt2s5RyvRBD-0CbD_ixmvm6AksCtQYLpR5Go5_ml9H1sgh3aHzPvO7XDvAitTOcBPu_3nLBeMp2aKc-KFpcq6erGMNuJJ_iD6COF5zBR95yzUUn0BxwGsCf46PS7S7RDwrLlhifzNl3JnQuhXNv-DGvZIh6HEH3rWzVTwshFsG5nvvYAKXfnQeptWjdxGmOpF2a3fLvZyWlBj4ufl-bmGUjY60te7kLc7b5dvBYdChZZiE9uMkbJJA_tXxBpZIQ7lb9-zxaK40-kxnRhuk800nXSf1SxDqJZLjqRCQn2GJ4MLklF1Z8t030gzH2LwEol94MdPgrYKVFQfSbkzdv5vcGlkN-tzLBV-qfPUC9dAfD1CXDeHi7k-iRL1mRJdeAwOcoIx-ZsE7KvG3eTBVHBpifXyNIXj1R41u4uvvHGwShwFbsUK6wFyPhhUeHZ_GQ481KIvCehI5yEMo3Zrdh_-GcRC2dBHclVAxSPV6jZQIjcKIUTs5irB2VpkkEK80SdfYhAe2Ud0_jaTnFy4grsj9NSNIrhBdOjX83U9MHaT9SZufCHs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/find/users2/2",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"find",
+						"users2",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW ALL USERS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNmM4OGJmN2MzNTY3N2JkZjVhNTc4ZjZkMzgxNWQzNWYxOGU3OWQ5ZDM4NTM2MDkzMzc1YjhhYWM0NGU2MDAxNTY2YmQ0NDAzNDQzYWZmMDciLCJpYXQiOjE2ODY5ODgxODIuNjc5NjQ1LCJuYmYiOjE2ODY5ODgxODIuNjc5NjQ2LCJleHAiOjE3MTg2MTA1ODIuNjU5MjMxLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.JwQw8mmLYVcOy4SizIebAKcLAswDQJTd35jOm5dh--8DViq1y4nN2rlh8GhgbcamFlV3HMPeBO_VDyehzWCpFYxTEE6SxRDdI9IClgG3Ut_5uNOzpTrsXX4O7lzt2s5RyvRBD-0CbD_ixmvm6AksCtQYLpR5Go5_ml9H1sgh3aHzPvO7XDvAitTOcBPu_3nLBeMp2aKc-KFpcq6erGMNuJJ_iD6COF5zBR95yzUUn0BxwGsCf46PS7S7RDwrLlhifzNl3JnQuhXNv-DGvZIh6HEH3rWzVTwshFsG5nvvYAKXfnQeptWjdxGmOpF2a3fLvZyWlBj4ufl-bmGUjY60te7kLc7b5dvBYdChZZiE9uMkbJJA_tXxBpZIQ7lb9-zxaK40-kxnRhuk800nXSf1SxDqJZLjqRCQn2GJ4MLklF1Z8t030gzH2LwEol94MdPgrYKVFQfSbkzdv5vcGlkN-tzLBV-qfPUC9dAfD1CXDeHi7k-iRL1mRJdeAwOcoIx-ZsE7KvG3eTBVHBpifXyNIXj1R41u4uvvHGwShwFbsUK6wFyPhhUeHZ_GQ481KIvCehI5yEMo3Zrdh_-GcRC2dBHclVAxSPV6jZQIjcKIUTs5irB2VpkkEK80SdfYhAe2Ud0_jaTnFy4grsj9NSNIrhBdOjX83U9MHaT9SZufCHs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/show/users1",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"show",
+						"users1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Authorization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYTNlNTQ5YzE1NThmOTgwMTRjMTBlMTIxYzdlODkyYTc4ZTFjN2Y3MzgwOTljNDliYzQ3MzUyNjEyY2JiYmI3NmJjNGEyODJjOTA4Y2RhODIiLCJpYXQiOjE2ODU2MDI3NjEuNDgxNDE3LCJuYmYiOjE2ODU2MDI3NjEuNDgxNDIsImV4cCI6MTcxNzIyNTE2MS40MTU3Nywic3ViIjoiIiwic2NvcGVzIjpbXX0.AD8g8o9xdm6cnHPt6tDsEpY7GjcqIH8RfXo_Wf74qh2KiuAYjSQNz_wVvA59VFtoQ5yDBGZPTRWRRwK2AjhjpWi5Is9Vn8rdHkE2d4kaDAkb_18hkF-_NTs9DNgObNpHUPtg5tleobSPhIkp4QjQxTKT3hLkbCRjTCqrX1oxmQwQGH5nUjIULTJ5qXlRtGkmm56olFmc_35USaZx7-xb8bO33QiH3_1FIxtr6prBXls_EKaloxy--F14S0Z5pbKrO1ZYgqsfoR1Ei3Smkbmr_cw3-5E3ylTHV8o6RzZyPfFnxCFzshz5VkwsH5V_Qf5tOm9gVxjspvhlTDTTxy1BCxuTv_PTjmh7nbRqfQVX5iVzBJASsPohRErA8E4juf92hzEJWVxCzBLQayxQqM6PIEtYRwYvOpMWUwO8u2ZQqvkTikpx5e82kSr7imScrNV1Uisr6oNdhhiT8pXaJuX82MPdn9DNGtx36cbgK53V9WjEo48hqWBIOMtwBHzyhzoneKfPAgSoho9xHYjOEfwEtvFSrDVhE80xfbsypeK9WQK8L5upKD_m1rtRih6OB3gPnlCPeY3BOpp4P5JD8I_f8qH2-HeeI0kCgpLxm36ocepvl1_TGpmGkCfOtBsW2iSLum0OLJJm9U-tcDEVIb_d2KErA52hv0s4pIWmI3pxqCg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "3",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "8ZFi8A5VFK4sBkVLBJ3BPhPxKAcvZl8DIpOqUtNA",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNmM4OGJmN2MzNTY3N2JkZjVhNTc4ZjZkMzgxNWQzNWYxOGU3OWQ5ZDM4NTM2MDkzMzc1YjhhYWM0NGU2MDAxNTY2YmQ0NDAzNDQzYWZmMDciLCJpYXQiOjE2ODY5ODgxODIuNjc5NjQ1LCJuYmYiOjE2ODY5ODgxODIuNjc5NjQ2LCJleHAiOjE3MTg2MTA1ODIuNjU5MjMxLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.JwQw8mmLYVcOy4SizIebAKcLAswDQJTd35jOm5dh--8DViq1y4nN2rlh8GhgbcamFlV3HMPeBO_VDyehzWCpFYxTEE6SxRDdI9IClgG3Ut_5uNOzpTrsXX4O7lzt2s5RyvRBD-0CbD_ixmvm6AksCtQYLpR5Go5_ml9H1sgh3aHzPvO7XDvAitTOcBPu_3nLBeMp2aKc-KFpcq6erGMNuJJ_iD6COF5zBR95yzUUn0BxwGsCf46PS7S7RDwrLlhifzNl3JnQuhXNv-DGvZIh6HEH3rWzVTwshFsG5nvvYAKXfnQeptWjdxGmOpF2a3fLvZyWlBj4ufl-bmGUjY60te7kLc7b5dvBYdChZZiE9uMkbJJA_tXxBpZIQ7lb9-zxaK40-kxnRhuk800nXSf1SxDqJZLjqRCQn2GJ4MLklF1Z8t030gzH2LwEol94MdPgrYKVFQfSbkzdv5vcGlkN-tzLBV-qfPUC9dAfD1CXDeHi7k-iRL1mRJdeAwOcoIx-ZsE7KvG3eTBVHBpifXyNIXj1R41u4uvvHGwShwFbsUK6wFyPhhUeHZ_GQ481KIvCehI5yEMo3Zrdh_-GcRC2dBHclVAxSPV6jZQIjcKIUTs5irB2VpkkEK80SdfYhAe2Ud0_jaTnFy4grsj9NSNIrhBdOjX83U9MHaT9SZufCHs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/delete/users1/1",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"delete",
+						"users1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiNmM4OGJmN2MzNTY3N2JkZjVhNTc4ZjZkMzgxNWQzNWYxOGU3OWQ5ZDM4NTM2MDkzMzc1YjhhYWM0NGU2MDAxNTY2YmQ0NDAzNDQzYWZmMDciLCJpYXQiOjE2ODY5ODgxODIuNjc5NjQ1LCJuYmYiOjE2ODY5ODgxODIuNjc5NjQ2LCJleHAiOjE3MTg2MTA1ODIuNjU5MjMxLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.JwQw8mmLYVcOy4SizIebAKcLAswDQJTd35jOm5dh--8DViq1y4nN2rlh8GhgbcamFlV3HMPeBO_VDyehzWCpFYxTEE6SxRDdI9IClgG3Ut_5uNOzpTrsXX4O7lzt2s5RyvRBD-0CbD_ixmvm6AksCtQYLpR5Go5_ml9H1sgh3aHzPvO7XDvAitTOcBPu_3nLBeMp2aKc-KFpcq6erGMNuJJ_iD6COF5zBR95yzUUn0BxwGsCf46PS7S7RDwrLlhifzNl3JnQuhXNv-DGvZIh6HEH3rWzVTwshFsG5nvvYAKXfnQeptWjdxGmOpF2a3fLvZyWlBj4ufl-bmGUjY60te7kLc7b5dvBYdChZZiE9uMkbJJA_tXxBpZIQ7lb9-zxaK40-kxnRhuk800nXSf1SxDqJZLjqRCQn2GJ4MLklF1Z8t030gzH2LwEol94MdPgrYKVFQfSbkzdv5vcGlkN-tzLBV-qfPUC9dAfD1CXDeHi7k-iRL1mRJdeAwOcoIx-ZsE7KvG3eTBVHBpifXyNIXj1R41u4uvvHGwShwFbsUK6wFyPhhUeHZ_GQ481KIvCehI5yEMo3Zrdh_-GcRC2dBHclVAxSPV6jZQIjcKIUTs5irB2VpkkEK80SdfYhAe2Ud0_jaTnFy4grsj9NSNIrhBdOjX83U9MHaT9SZufCHs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://sialab5gateway.000webhostapp.com/update/users1/2?username=Kent&password=4321&gender=Male&jobid=7",
+					"protocol": "https",
+					"host": [
+						"sialab5gateway",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"update",
+						"users1",
+						"2"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Kent"
+						},
+						{
+							"key": "password",
+							"value": "4321"
+						},
+						{
+							"key": "gender",
+							"value": "Male"
+						},
+						{
+							"key": "jobid",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

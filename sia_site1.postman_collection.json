@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "b986dd31-254b-44c5-a75e-9181bdfee8e0",
+		"name": "sia_site1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Harold",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "default"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "default"
+						},
+						{
+							"key": "jobid",
+							"value": "6",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://sialab5.000webhostapp.com/add/users",
+					"protocol": "https",
+					"host": [
+						"sialab5",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"add",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH USER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://sialab5.000webhostapp.com/find/users/4",
+					"protocol": "https",
+					"host": [
+						"sialab5",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"find",
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW ALL USER",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://sialab5.000webhostapp.com/show/users",
+					"protocol": "https",
+					"host": [
+						"sialab5",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"show",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://sialab5.000webhostapp.com/delete/users/2",
+					"protocol": "https",
+					"host": [
+						"sialab5",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"delete",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "cW59NqK1QQ8JW1n2xwIeqAau483xEyc4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://sialab5.000webhostapp.com/update/users/1?username=kent&password=1234&gender=Male&jobid=2",
+					"protocol": "https",
+					"host": [
+						"sialab5",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"update",
+						"users",
+						"1"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "kent"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "gender",
+							"value": "Male"
+						},
+						{
+							"key": "jobid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
